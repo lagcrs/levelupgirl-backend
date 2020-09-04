@@ -1,6 +1,16 @@
 const express = require('express');
 const cors = require('cors');
 const server = express();
+const { Client } = require('pg');
+
+const client = new Client({
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false
+    }
+});
+
+client.connect();
 
 const routes = require('./routes');
 

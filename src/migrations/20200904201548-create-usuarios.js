@@ -9,7 +9,15 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      name: {
+      nome: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
+      sobrenome: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
+      user: {
         allowNull: false,
         type: Sequelize.STRING,
       },
@@ -18,7 +26,23 @@ module.exports = {
         type: Sequelize.STRING,
         unique: true,
       },
-      password: {
+      senha: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
+      telefone: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
+      pais: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
+      estado: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
+      cidade: {
         allowNull: false,
         type: Sequelize.STRING,
       },
