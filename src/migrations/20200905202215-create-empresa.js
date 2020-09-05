@@ -2,31 +2,30 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Usuario', {
+    return queryInterface.createTable('Empresa', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      nome: {
+      razao_social: {
         allowNull: false,
         type: Sequelize.STRING,
       },
-      sobrenome: {
+      nome_fantasia: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
+      cnpj: {
         allowNull: false,
         type: Sequelize.STRING,
       },
       email: {
         allowNull: false,
         type: Sequelize.STRING,
-        unique: true,
       },
       senha: {
-        allowNull: false,
-        type: Sequelize.STRING,
-      },
-      user: {
         allowNull: false,
         type: Sequelize.STRING,
       },
@@ -42,23 +41,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING,
       },
-      telefone: {
-        allowNull: true,
-        type: Sequelize.STRING,
-      },
-      biografia: {
-        allowNull: true,
-        type: Sequelize.STRING,
-      },
-      facebook: {
-        allowNull: true,
-        type: Sequelize.STRING,
-      },
-      linkedin: {
-        allowNull: true,
-        type: Sequelize.STRING,
-      },
-      instagram: {
+      site: {
         allowNull: true,
         type: Sequelize.STRING,
       },
@@ -70,10 +53,10 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE,
       },
-    });
+    })
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Usuario');
+    return queryInterface.dropTable('Empresa');
   }
 };
