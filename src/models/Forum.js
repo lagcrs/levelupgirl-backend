@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
         });
 
         Forum.associate = function(models) {
-            Forum.hasMany(models.RespostaForum, {
+            Forum.hasMany(models.Resposta_Forum, {
                 foreignKey: 'forum_id'
             });
         };

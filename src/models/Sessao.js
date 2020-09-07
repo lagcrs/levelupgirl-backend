@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
             references: 'Mentoria',
             referencesKey: 'id'
         },
-        usuario_id: {
+        participante_id: {
             type: DataTypes.INTEGER,
             references: 'Usuario',
             referencesKey: 'id'
@@ -20,10 +20,6 @@ module.exports = (sequelize, DataTypes) => {
             Sessao.belongsTo(models.Mentoria, {
                 foreignKey: 'mentoria_id'
             });
-
-            Sessao.hasMany(models.Usuario, {
-                foreignKey: 'usuario_id'
-            })
         };
   
     return Sessao;

@@ -1,15 +1,15 @@
 'use strict'
 module.exports = (sequelize, DataTypes) => {
 
-    const RespostaForum = sequelize.define('RespostaForum', {
+    const Resposta_Forum = sequelize.define('Resposta_Forum', {
         autor_resposta_id: {
             type: DataTypes.INTEGER,
             references: 'Usuario',
             referencesKey: 'id'
         },
-        duvida_id: {
+        forum_id: {
             type: DataTypes.INTEGER,
-            references: 'Duvida',
+            references: 'Forum',
             referencesKey: 'id'
         },
         mensagem: DataTypes.STRING,
@@ -17,15 +17,11 @@ module.exports = (sequelize, DataTypes) => {
             freezeTableName: true
         });
 
-        RespostaForum.associate = function(models) {
-            RespostaForum.belongsTo(models.Duvida, {
-                foreignKey: 'duvida_id'
-            });
-
-            RespostaForum.belongsTo(models.Usuario, {
-                foreignKey: 'autor_resposta_id'
+        Resposta_Forum.associate = function(models) {
+            Resposta_Forum.belongsTo(models.Forum, {
+                foreignKey: 'forum_id'
             });
         };
   
-    return RespostaForum;
+    return Resposta_Forum;
 }

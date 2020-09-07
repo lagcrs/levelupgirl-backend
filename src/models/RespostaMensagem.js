@@ -1,7 +1,7 @@
 'use strict'
 module.exports = (sequelize, DataTypes) => {
 
-    const RespostaMensagem = sequelize.define('RespostaMensagem', {
+    const Resposta_Mensagem = sequelize.define('Resposta_Mensagem', {
         autor_id: {
             type: DataTypes.INTEGER,
             references: 'Usuario',
@@ -17,16 +17,12 @@ module.exports = (sequelize, DataTypes) => {
             freezeTableName: true
         });
 
-        RespostaMensagem.associate = function(models) {
-            RespostaMensagem.belongsTo(models.Usuario, {
-                foreignKey: 'autor_id'
-            });
-
-            RespostaMensagem.belongsTo(models.Duvida, {
-                foreignKey: 'duvida_id'
+        Resposta_Mensagem.associate = function(models) {
+            Resposta_Mensagem.belongsTo(models.Mensagem, {
+                foreignKey: 'mensagem_id'
             });
 
         };
   
-    return RespostaMensagem;
+    return Resposta_Mensagem;
 }

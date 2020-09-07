@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
         titulo: DataTypes.STRING,
         data: DataTypes.DATEONLY,
         hora: DataTypes.TIME,
-        usuario_id: {
+        mentora_id: {
             type: DataTypes.INTEGER,
             references: 'Usuario',
             referencesKey: 'id'

@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
             Mensagem.belongsTo(models.Usuario, {
                 foreignKey: 'autor_id'
             });
-            Mensagem.hasMany(models.RespostaMensagem, {
+            Mensagem.hasMany(models.Resposta_Mensagem, {
                 foreignKey: 'mensagem_id'
             });
         };

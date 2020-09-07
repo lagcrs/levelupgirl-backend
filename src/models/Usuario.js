@@ -8,6 +8,9 @@ module.exports = (sequelize, DataTypes) => {
       email: DataTypes.STRING,
       senha: DataTypes.STRING,
       user: DataTypes.STRING,
+      soft_skills: DataTypes.STRING,
+      hard_skills: DataTypes.STRING,
+      tech_coins: DataTypes.INTEGER,
       pais: DataTypes.STRING,
       estado: DataTypes.STRING,
       cidade: DataTypes.STRING,
@@ -28,15 +31,15 @@ module.exports = (sequelize, DataTypes) => {
             foreignKey: 'autor_id'
         });
 
-        Usuario.hasMany(models.RespostaDuvida, {
+        Usuario.hasMany(models.Resposta_Duvida, {
             foreignKey: 'autor_resposta_id'
         });
 
-        Usuario.hasMany(models.RespostaForum, {
-            foreignKey: 'autor_id'
+        Usuario.hasMany(models.Resposta_Forum, {
+            foreignKey: 'autor_resposta_id'
         });
 
-        Usuario.hasMany(models.RespostaMensagem, {
+        Usuario.hasMany(models.Resposta_Mensagem, {
             foreignKey: 'autor_id'
         });
 
