@@ -15,6 +15,8 @@ module.exports = (sequelize, DataTypes) => {
             referencesKey: 'id'
         },
         localizacao: DataTypes.STRING,
+        },{
+            freezeTableName: true
         });
 
         Entrevista.associate = function(models) {

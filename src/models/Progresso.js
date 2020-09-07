@@ -12,6 +12,8 @@ module.exports = (sequelize, DataTypes) => {
             references: 'Trilha',
             referencesKey: 'id'
         },
+        },{
+            freezeTableName: true
         });
 
         Progresso.associate = function(models) {

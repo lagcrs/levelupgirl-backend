@@ -11,6 +11,8 @@ module.exports = (sequelize, DataTypes) => {
             referencesKey: 'id'
         },
         link: DataTypes.STRING,
+        },{
+            freezeTableName: true
         });
 
         Mentoria.associate = function(models) {

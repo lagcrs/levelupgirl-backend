@@ -4,6 +4,8 @@ module.exports = (sequelize, DataTypes) => {
     const Forum = sequelize.define('Forum', {
         titulo: DataTypes.STRING,
         mensagem: DataTypes.STRING,
+        },{
+            freezeTableName: true
         });
 
         Forum.associate = function(models) {

@@ -12,6 +12,8 @@ module.exports = (sequelize, DataTypes) => {
             references: 'Usuario',
             referencesKey: 'id'
         },
+        },{
+            freezeTableName: true
         });
 
         Sessao.associate = function(models) {

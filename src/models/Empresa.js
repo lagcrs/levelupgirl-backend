@@ -11,7 +11,11 @@ module.exports = (sequelize, DataTypes) => {
       estado: DataTypes.STRING,
       cidade: DataTypes.STRING,
       site: DataTypes.STRING,
-    });
+      
+    },{
+        freezeTableName: true
+      }
+    );
 
     Empresa.associate = function(models) {
         Empresa.hasMany(models.Vaga, {

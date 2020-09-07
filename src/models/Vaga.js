@@ -12,6 +12,8 @@ module.exports = (sequelize, DataTypes) => {
         descricao: DataTypes.STRING,
         area: DataTypes.STRING,
         nivel_experiencia: DataTypes.STRING,
+        },{
+            freezeTableName: true
         });
 
         Vaga.associate = function(models) {

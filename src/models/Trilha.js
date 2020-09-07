@@ -5,6 +5,8 @@ module.exports = (sequelize, DataTypes) => {
         titulo: DataTypes.STRING,
         valor_techcoins: DataTypes.INTEGER,
         descricao: DataTypes.STRING,
+        }, {
+            freezeTableName: true
         });
 
         Trilha.associate = function(models) {

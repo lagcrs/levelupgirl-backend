@@ -13,6 +13,8 @@ module.exports = (sequelize, DataTypes) => {
             referencesKey: 'id'
         },
         mensagem: DataTypes.STRING,
+        },{
+            freezeTableName: true
         });
 
         RespostaDuvida.associate = function(models) {
