@@ -21,7 +21,6 @@ module.exports = {
       email: {
         allowNull: false,
         type: Sequelize.STRING,
-        unique: true,
       },
       senha: {
         allowNull: false,
@@ -30,6 +29,18 @@ module.exports = {
       user: {
         allowNull: false,
         type: Sequelize.STRING,
+      },
+      soft_skills: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
+      hard_skills: {
+        allowNull: false,
+        type: Sequelize.STRING,
+      },
+      tech_coins: {
+        allowNull: true,
+        type: Sequelize.INTEGER,
       },
       pais: {
         allowNull: false,

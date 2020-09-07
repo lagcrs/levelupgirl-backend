@@ -35,7 +35,7 @@ module.exports = {
       },
       localizacao: {
         allowNull: false,
-        type: Sequelize.TIME,
+        type: Sequelize.STRING,
       },
       createdAt: {
         allowNull: false,

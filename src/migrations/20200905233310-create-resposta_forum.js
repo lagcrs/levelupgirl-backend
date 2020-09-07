@@ -9,7 +9,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      autor_id: {
+      autor_resposta_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {

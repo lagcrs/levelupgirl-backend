@@ -2,7 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Resposta_Forum', {
+    return queryInterface.createTable('Resposta_Mensagem', {
       id: {
         allowNull: false,
         autoIncrement: true,
