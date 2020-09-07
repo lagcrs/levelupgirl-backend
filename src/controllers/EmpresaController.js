@@ -3,7 +3,7 @@ const model = require('../models/index');
 module.exports = {
     async index(req, res) {
         await model.Empresa.findAll({
-            attributes: ['razao_social', 'nome_fantasia', 'cnpj', 'email', 'senha', 'pais', 'estado', 'cidade', 'site']
+            attributes: ['id', 'razao_social', 'nome_fantasia', 'cnpj', 'email', 'senha', 'pais', 'estado', 'cidade', 'site']
         })
         .then(empresas => res.status(200).json(empresas))
         .catch(err => res.status(500).json({
@@ -29,13 +29,13 @@ module.exports = {
     },
 
     async show(req, res) {
-        const { empresa_id } = req.params;
+        const { empresa_id } = req.query;
 
         await model.Empresa.findOne({
             where: { id: empresa_id },
             attributes: ['razao_social', 'nome_fantasia', 'cnpj', 'email', 'senha', 'pais', 'estado', 'cidade', 'site']
         })
-        .then(usuario => res.status(200).json({usuario}))
+        .then(empresa => res.status(200).json({empresa}))
         .catch(err => res.status(400).json({
             message: 'Empresa nao existe',
             error: true,
