@@ -17,7 +17,7 @@ module.exports = {
           key: 'id'
         }
       },
-      forum_id: {
+      duvida_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {

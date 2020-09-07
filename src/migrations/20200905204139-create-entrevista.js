@@ -33,6 +33,10 @@ module.exports = {
           key: 'id'
         }
       },
+      localizacao: {
+        allowNull: false,
+        type: Sequelize.TIME,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
