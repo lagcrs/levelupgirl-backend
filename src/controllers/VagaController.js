@@ -21,8 +21,6 @@ module.exports = {
         })
         .then( id => { return id });
 
-        console.log(empresaId)
-
         await model.Vaga.create({
             titulo, empresa_id: empresaId['id'], localizacao, descricao, area, nivel_experiencia 
         })
