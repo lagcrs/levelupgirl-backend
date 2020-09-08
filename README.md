@@ -30,7 +30,7 @@ Para o desenvolvimento das interfaces foi utilizado o ReactJs, uma biblioteca Ja
 - [Sequelize](https://sequelize.org/)
 
 ### :paperclip: Pré-requisitos
-Precisa ter as seguintes tecnologias instaladas para o rodar o projeto:
+Precisa ter as seguintes tecnologias instaladas para rodar o projeto:
 - Node.js
 - NPM
 - Git
