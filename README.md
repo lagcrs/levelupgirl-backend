@@ -20,8 +20,10 @@ Entendemos que às vezes pode existir medo, insegurança ou ansiedade nas candid
 
 - Nossa API encontra-se no [Heroku](https://levelupgirl-backend.herokuapp.com/) :purple_heart:
 - Preview da nossa plataforma no [Vercel](https://levelupgirl.vercel.app/) :sparkles: <br/>
+- Repositório [Frontend](https://github.com/dezzasalmeida/levelupgirl) :pushpin:
 
-*Nosso Frontend foi feito pela dev [Andrezza Almeida](https://github.com/dezzasalmeida)* :heart:
+*Nosso Frontend foi feito pela dev [Andrezza Almeida](https://github.com/dezzasalmeida) :heart:.* 
+
 
 ## 🛠 Tecnologias utilizadas
 
