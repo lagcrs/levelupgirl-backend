@@ -8,9 +8,9 @@
 <p align="center">Plataforma desenvolvida por mulheres para mulheres na tecnologia :woman:</p>
 
 <p align="center"> 
-  <img src="https://img.shields.io/github/languages/count/lagcrs/proffy" alt="Languages">
-  <img src="https://img.shields.io/github/last-commit/lagcrs/proffy" alt="Last Commit">
-  <img src="https://img.shields.io/github/repo-size/lagcrs/proffy" alt="Repo size">
+  <img src="https://img.shields.io/github/languages/count/lagcrs/levelupgirl-backend" alt="Languages">
+  <img src="https://img.shields.io/github/last-commit/lagcrs/levelupgirl-backend" alt="Last Commit">
+  <img src="https://img.shields.io/github/repo-size/lagcrs/levelupgirl-backend" alt="Repo size">
 </p>
 
 ## 💻 Sobre o projeto
@@ -18,7 +18,10 @@ A LevelUp, Girl! é uma plataforma divertida voltada para mulheres na tecnologia
 
 Entendemos que às vezes pode existir medo, insegurança ou ansiedade nas candidaturas, o que gera uma alta taxa de desistência nos processos seletivos, mas estamos aqui para te apoiar! Essa plataforma foi desenvolvida com o intuito de crescermos como um grupo de mulheres motivadas a conquistarem o que quisermos e alcançar altos patamares em nossas carreiras.
 
-Nossa API encontra-se no [Heroku](https://levelupgirl-backend.herokuapp.com/) :purple_heart:
+- Nossa API encontra-se no [Heroku](https://levelupgirl-backend.herokuapp.com/) :purple_heart:
+- Preview da nossa plataforma no [Vercel](https://levelupgirl.vercel.app/) :sparkles: <br/>
+
+*Nosso Frontend foi feito pela dev [Andrezza Almeida](https://github.com/dezzasalmeida)* :heart:
 
 ## 🛠 Tecnologias utilizadas
 
